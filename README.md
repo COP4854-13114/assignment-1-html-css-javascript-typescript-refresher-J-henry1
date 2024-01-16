@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13410323&assignment_repo_type=AssignmentRepo)
 ## Assignment 1
 The currently GitHub repository contains a Readme file with the assignment instructions and a folder called assets where you can place images you need on your web page and an index.html blank page that should be used to write your app/ page.
 
