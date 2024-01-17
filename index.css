@@ -1,5 +1,14 @@
 /* Product Review CSS file */
 /* @version 1/17/2024 */
+
+h1{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+}
 .product{
     display: flex;
     flex-direction: column;
@@ -17,4 +26,9 @@
 #image{
     height: 250px;
     width: 500px;
+    
+    border: 2px solid #cecaca;
+    padding: 10px;
+
+    
 }

@@ -15,8 +15,9 @@
         <img id="image" src="./Product_Images/mac_book.jpg" alt="image">
 
         <div class="imageSelector">
+            <!-- defaulting to "Checked" was found here - https://stackoverflow.com/questions/5592345/how-to-select-a-radio-button-by-default -->
+            <input checked type="radio" name="options" value="image2" onchange="updateImage('./Product_Images/mac_book.jpg')">
             <input type="radio" name="options" value="image1" onchange="updateImage('./Product_Images/zoom_keyboard.jpg')">
-            <input type="radio" name="options" value="image2" onchange="updateImage('./Product_Images/mac_book.jpg')">
             <input type="radio" name="options" value="image3" onchange="updateImage('./Product_Images/top_macBook.jpg')">
         </div>
         
