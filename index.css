@@ -12,15 +12,41 @@ h1{
 .product{
     display: flex;
     flex-direction: column;
+    align-items: center;   
+}
+
+.product{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+#imgSelector{
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    margin-top: 5%;
-   
 }
 
-.imageSelector{
-    margin-top: 2%;
+.productDetail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6%;
 }
 
+
+#imageSelector{
+    margin-left: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+
+}
+
+.reviewInput{
+    display: none;
+}
 
 
 #image{
@@ -29,6 +55,17 @@ h1{
     
     border: 2px solid #cecaca;
     padding: 10px;
-
     
+}
+
+.pricing{
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #cecaca;
+    padding: 10px;
+}
+
+i{
+    
+    color: rgb(209, 209, 86);
 }
