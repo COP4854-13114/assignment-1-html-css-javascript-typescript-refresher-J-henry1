@@ -44,8 +44,12 @@ h1{
 
 }
 
-.reviewInput{
+#reviewInput{
     display: none;
+}
+
+#reviewHistory{
+    display:none;
 }
 
 
