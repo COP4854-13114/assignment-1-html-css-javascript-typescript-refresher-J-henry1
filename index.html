@@ -22,11 +22,43 @@
             <button onclick="writeReview()">Write a Review</button>
             <button onclick="showReviews()">See All Reviews</button>
             <div id="reviewHistory">
-                <h1>This is a Review</h1>
-                <p>See my Review</p>
+                
+                <h1 class="reviewTitle">This is a Review</h1>
+                <p class="reviewBody">See my Review</p>
             </div>
             
-            <input id="reviewInput" type="textbox">
+            <div id="reviewInput">
+                
+                <!-- this is the field that will populate stars based on user rating -->
+                <div id="starContainer"></div>
+                
+                <div class="inputReview">
+                    <label><strong>Review Title</strong></label>
+                    <input type="textbox">
+                </div>
+
+                <div class="inputReview">
+                    <label> <strong>Describe Your Experience with this Product</strong> </label>
+                    <input class="textBox" type="textbox">
+                </div>
+
+                <div>
+                    <label><strong>Rate this Product</strong> </label>
+                    <select name="rating" id="rating">
+                        <option value="5">5 (Excellent)</option>
+                        <option value="4">4 (Very Good)</option>
+                        <option value="3">3 (Good)</option>
+                        <option value="2">2 (Poor)</option>
+                        <option value="1">1 (Never Again)</option>
+                    </select>
+                    
+                </div>
+                
+                <button onClick="starRating()" id="saveReview">Save Review</button>
+
+            </div>
+            
+            
         </div>
         
 

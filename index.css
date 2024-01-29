@@ -46,6 +46,7 @@ h1{
 
 #reviewInput{
     display: none;
+    margin-top: 18px;
 }
 
 #reviewHistory{
@@ -71,5 +72,40 @@ h1{
 
 i{
     
-    color: rgb(209, 209, 86);
+    color: gold;
+}
+
+.reviewTitle{
+    
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 15px;
+    
+    /* margin: 0; */
+}
+
+.inputReview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 20px;
+}
+
+.textBox{
+    height: 250px;
+    width: 200px;
+}
+
+.saveReview{
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myStar {
+
+    color: blue;
 }

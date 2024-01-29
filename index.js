@@ -37,3 +37,38 @@ function writeReview(){
         inputField.style.display = 'block';
     }
 }//end writeReview function
+
+//set state of starsAdded
+var starsAdded = false;
+
+function starRating(){
+    
+    //gets the rating selected by user
+    var rating = document.getElementById("rating").value
+
+   
+
+    if(!starsAdded){
+        //creates star elemement, inserts icon, then appends star to the i element
+        //checks if looped through value is equal to or less than the rating. If yes, make star
+        //gold. if No, color star grey
+    for(var i = 1; i <= 5; i++){
+        var starElement = document.createElement('i');   
+        starElement.className = 'fa fa-star';
+        var targetDiv = document.getElementById('starContainer');
+        targetDiv.appendChild(starElement)
+        
+
+        if(i <= rating){
+            starElement.style.color = 'gold';
+        }
+        else{
+            starElement.style.color = 'grey';
+        }
+    }
+    
+    //update stars added state/flag to true once stars are created to keep simutanious entries
+    starsAdded = true;
+}//end if starsAdded
+
+}
