@@ -129,31 +129,53 @@ function saveReview(){
     }
    
         totalReviews.innerHTML = "Average Rating: " + averageStars;
-    
-    
-    for(var j = 1; j <= 5; j++){
-
+ 
+    //creates average star rating and adjust color dynamically
+    for (var j = 1; j <= 5; j++) {
         var averageStarContainer = document.createElement('i');
-        averageStarContainer.className = "fa fa-star";
-
-        if(averageStars >= j){
-            averageStarContainer.style.color = 'gold';
+    // this is checking if the averageStars is a while number
+    // if its not a whole number make check if incrementer is equal to floor of average stars
+    //make this star a half star. 
+        if (averageStars % 1 !== 0) {
+            
+            if (j === Math.floor(averageStars)) {
+                averageStarContainer.className = "fas fa-star-half";
+            } else if (j < Math.ceil(averageStars)) {
+                averageStarContainer.className = "fa fa-star";
+            } else {
+                averageStarContainer.className = "fa fa-star";
+            }
+        } else {
+            // Whole star case
+            if (j <= averageStars) {
+                averageStarContainer.className = "fa fa-star";
+            } else {
+                averageStarContainer.className = "fa fa-star";
+            }
         }
-        else{
-            averageStarContainer.style.color = 'grey'
-        }
-
-        totalReviews.appendChild(averageStarContainer);
-    }
-
-
-
-
-
-
     
+        // Set color based on rating
+        if (averageStars >= j) {
+            averageStarContainer.style.color = 'gold';
+        } else {
+            averageStarContainer.style.color = 'grey';
+        }
+    
+        totalReviews.appendChild(averageStarContainer);
 
-  
+        // var averageStarContainer = document.createElement('i');
+        // averageStarContainer.className = "fa fa-star";
+
+        // if(averageStars >= j){
+        //     averageStarContainer.style.color = 'gold';
+        // }
+        // else{
+        //     averageStarContainer.style.color = 'grey'
+        // }
+
+       
+        // totalReviews.appendChild(averageStarContainer);
+    }
 
 
 }//end
@@ -161,7 +183,7 @@ function saveReview(){
 
 
 
-
+//fas fa-star-half
 
 
 
