@@ -18,28 +18,37 @@
         <div class = pricing>
             <section> Price: $999.99</section>
             <section>Model:MGN93LL/ASKU:6418597 </section>
-            <h3>Reviews: <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 4.8 Average (2 reviews)</h3>               
+            <h3 id="totalReviews">Reviews:</h3>               
             <button onclick="writeReview()">Write a Review</button>
             <button onclick="showReviews()">See All Reviews</button>
             <div id="reviewHistory">
                 
-                <h1 class="reviewTitle">This is a Review</h1>
-                <p class="reviewBody">See my Review</p>
+                
+
+            
+            
             </div>
             
             <div id="reviewInput">
+
+                
                 
                 <!-- this is the field that will populate stars based on user rating -->
                 <div id="starContainer"></div>
+
+                <div class="inputReview">
+                    <label><strong>Name of Reviewer</strong></label>
+                    <input id="reviewName" type="textbox">
+                </div>
                 
                 <div class="inputReview">
                     <label><strong>Review Title</strong></label>
-                    <input type="textbox">
+                    <input id="headerReview" type="textbox">
                 </div>
 
                 <div class="inputReview">
                     <label> <strong>Describe Your Experience with this Product</strong> </label>
-                    <input class="textBox" type="textbox">
+                    <input id="reviewDescription" type="textbox">
                 </div>
 
                 <div>
@@ -54,7 +63,7 @@
                     
                 </div>
                 
-                <button onClick="starRating()" id="saveReview">Save Review</button>
+                <button onclick="saveReview()" id="saveReview">Save Review</button>
 
             </div>
             
